@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component,ViewEncapsulation,Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.Native
 })
 export class AppComponent {
-  title = 'widget-sample';
+  @Input() name = 'friend';
+  focus: string;
+  focusSet = false;
+  setFocus(value) {
+    this.focus = value;
+    this.focusSet = true;
+  }
 }
