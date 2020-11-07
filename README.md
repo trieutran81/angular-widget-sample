@@ -17,7 +17,6 @@ Thêm đoạn script vào trước </body>
 ```
 ## Add script in website
 ```html
-<script>
        <script>
         (function (w, d, s, o, f, js, fjs) {
             var elemDiv = document.createElement('widget-sample');
